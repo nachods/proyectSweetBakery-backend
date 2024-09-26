@@ -13,6 +13,7 @@ app.use(cors());
 //Importar Rutas
 const registerRoutes = require('./router/register');
 const LoginRoutes = require('./router/login');
+const GetMeRoutes = require('./router/getMe');
 
 //Proceso de Datos
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -24,5 +25,6 @@ app.use(express.static("uploads"));
 //Configurar Rutas
 app.use(`/api/${apiVersion}`, registerRoutes);
 app.use(`/api/${apiVersion}`, LoginRoutes);
+app.use(`/api/${apiVersion}`, GetMeRoutes);
 
 module.exports = app;
