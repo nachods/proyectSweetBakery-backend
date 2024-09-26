@@ -1,0 +1,11 @@
+{
+  "name": "sweet",
+  "version": "0.0.1",
+  "description": "Esta es la pagina del emprendimiento Sweet Bakery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ignacio De Simone",
+  "license": "ISC"
+}
