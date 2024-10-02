@@ -14,6 +14,7 @@ app.use(cors());
 const registerRoutes = require('./router/register');
 const LoginRoutes = require('./router/login');
 const GetMeRoutes = require('./router/getMe');
+const CatalogoRoutes = require('./router/catalogo');
 
 //Proceso de Datos
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -26,5 +27,6 @@ app.use(express.static("uploads"));
 app.use(`/api/${apiVersion}`, registerRoutes);
 app.use(`/api/${apiVersion}`, LoginRoutes);
 app.use(`/api/${apiVersion}`, GetMeRoutes);
+app.use(`/api/${apiVersion}`, CatalogoRoutes);
 
 module.exports = app;
