@@ -7,7 +7,7 @@ const dbPass = process.env.DB_PASS;
 const dbHost = process.env.DB_HOST;
 const ipServer = process.env.IP_SERVER;
 const apiVersion = process.env.API_VERSION;
-const port = process.env.PORT;
+const port = process.env.PORT || 4000;
 
 const connectDB = async () => {
   try {
